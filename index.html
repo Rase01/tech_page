@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 5 y estilos-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/animated_title.js"></script>
+    <script src="js/screen_size.js"></script>
+    <script src="js/return_button.js"></script>
+    <title>Tecnologia</title>
+</head>
+<body>
+
+    <!--Boton para regresar al inicio-->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active links" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#tendencias_actuales">Actualidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#centros_estudio">¿Donde estudiar?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#beneficios">Beneficios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--Titulo / Falta colocar título-->
+    <div class="container-fluid p-0 opacity-75 img-fluid w-auto bg-black" id="div-title">
+        <div class="p-5" id="title-box">
+            <h1 class="text-center" id="main-title">titulo de ejemplo</h1>
+        </div>
+    </div>
+
+    <!--Apartado de Tendencias-->
+    <section id="tendencias_actuales">
+      <h2 class="text-center p-4">Tendencias Actuales</h2>
+    <!-- Carrousel para mostrar las tendencias actuales -->
+    <div class="center">
+      <div class="container">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row">
+                <div class="col-auto">
+                  <img src="img/ia.jpg" class="d-block images shadow-lg" alt="Inteligencia artificial">
+                  <div class="text-center p-4">
+                    <h5>Inteligencia Artificial</h5>
+                    <p class="text-center p-3 d-block align-items-center m-auto parrafo">La inteligencia artificial es una de las  tecnologías con mayor posibilidad de crecimiento y mejora de la actualidad. Muchas empresas están buscando   implementarla en sus procesos, maquinaría, atención al cliente, entre otros.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row">
+                <div class="col-auto">
+                  <img src="img/analisis-de-datos.jpg" class="d-block images shadow-lg" alt="Analisis de datos">
+                  <div class="text-center p-4">
+                    <h5>Procesamiento Masivo de Datos</h5>
+                    <p class="text-center p-3 align-items-center m-auto h-75 parrafo">Ahora que la mayoría de la población tiene acceso a internet, las procesamiento de datos se ha vuelto de vital importancia para manejar los grandes volúmenes de información que recorren la web día tras día.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/robotica.webp" class="d-block images shadow-lg" alt="Robotica">
+              <div class="text-center p-4">
+                <h5>Robótica</h5>
+                <p class="text-center p-3 align-items-center m-auto h-75 parrafo">Junto con la inteligencia artificial, se espera un alto crecimiento de la robótica en el futuro. Algunos de los campos donde se espera esto es en la medicina por las posibles prótesis, en las empresas industrial por la maquinaría, entre otros.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--Apartado de Universidades-->
+    <section id="centros_estudio" class="bg-dark">
+      <div class="center">
+        <div class="container">
+          <h3 class="text-white text-center subtitulo p-xxl-5">
+            ¿Deseas pertenecer a este mundo?
+            <a href="universidades.html" class="text-info text-decoration-none">Descubre las mejores universidades</a>
+          </h3>
+          <div id="carouselCentro" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="img/uni.jpg" alt="Universidad Nacional de Ingenieria" class="d-block images-uni shadow-lg">
+                    <h5 class="text-white text-center p-5">Universidad Nacional de Ingeniería</h5>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="img/sanMarcos.png" alt="Universidad Nacional Mayor de San Marcos" class="bg-white d-block images-uni">
+                    <h5 class="text-white text-center p-5">Universidad Nacional Mayor de San Marcos</h5>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="img/unitro.png" alt="Universidad Nacional de Trujillo" class="bg-white d-block images-uni">
+                    <h5 class="text-white text-center p-5">Universidad Nacional de Trujillo</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="img/upc.png" alt="Universidad Peruana de Ciencias Aplicadas" class="bg-white d-block images-uni">
+                    <h5 class="text-white text-center p-5">Universidad Peruana de Ciencias Aplicadas</h5>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="img/utp.jpeg" alt="Universidad Tecnologica del Peru" class="d-block images-uni">
+                    <h5 class="text-white text-center p-5">Universidad Tecnologica del Peru</h5>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="img/pucp.png" alt="Pontifica Universidad Catolica del Peru" class="d-block images-uni">
+                    <h5 class="text-white text-center p-5">Pontifica Universidad Catolica del Peru</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCentro" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCentro" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Apartado de importancia y beneficios-->
+    <section id="beneficios">
+      <h2 class="text-center p-4">Beneficios de estudiar una carrera tecnológica</h2>
+      <div class="container-fluid">
+        <div class="row text-center center gap-5">
+          <div class="card" style="width: 20rem; padding: 10px; height: 22rem;">
+            <img src="img/campo_laboral.jpg" class="card-img-top card_img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Amplio campo laboral</h5>
+              <p class="card-text">Las carreras tecnológicas ofrecen variedad de especialidades por las cuales se puede decidir uno.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; padding: 10px;">
+            <img src="img/salario.jpg" class="card-img-top card_img" alt="Candado de seguridad">
+            <div class="card-body">
+              <h5 class="card-title">Salario alto</h5>
+              <p class="card-text">Al tratarse de un sector en constante cambio, las empresas ofrecen salarios deseables por la alta competitividad.</p>
+            </div>
+          </div>
+          <div class="card " style="width: 20rem; padding: 10px;">
+            <img src="img/teletrabajo.jpg" class="card-img-top card_img" alt="Error">
+            <div class="card-body">
+              <h5 class="card-title">Teletrabajo</h5>
+              <p class="card-text">Dependiendo del trabajo, las compañías ofrecen esta posibilidad. Ejem. Desarrollador.</p>
+            </div>
+          </div>
+        </div>    
+      </div>
+      <h2 class="text-center p-5" style="width: 100%; margin: 0 auto;"><a href="beneficios.html" class="text-white bg-dark p-1 text-decoration-none small" style="border-radius: 10px;">Conoce más aquí</a> </h2>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-dark w-100 m-0">
+      <div>
+        <h3 class="text-white text-center m-0" style="align-items: center; text-align: center; line-height: 15rem;">
+          <!--Colocan su nombre-->
+          Desarrollado por ******</h3>
+      </div>
+    </footer>
+</body>
+</html>
