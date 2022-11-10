@@ -136,7 +136,7 @@ footer{
         height: 500px;
     }
     #tendencias_actuales{
-        height: 500px;
+        height: 600px;
         margin: 50px auto;
     }
     .images{
@@ -148,5 +148,8 @@ footer{
     }
     .parrafo{
         width: 100%;
+    }
+    .navbar{
+        height: 100%;
     }
 }
