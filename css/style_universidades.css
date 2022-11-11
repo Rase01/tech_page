@@ -121,6 +121,20 @@ footer{
         height: 200px;
         width: 200px;
     }
-
+    #progress{
+        display: none;
+    }
     
+}
+@media (max-width: 768px){
+    #progress{
+        height: 40px;
+        width: 40px;
+    }
+    
+    #progress-value{
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        font-size: 10px;
+    }
 }

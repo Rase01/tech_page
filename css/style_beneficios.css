@@ -127,4 +127,22 @@ footer{
     .navbar{
         height: 100%;
     }
+    #progress{
+        display: none;
+    }
+    #progress-value{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    #progress{
+        height: 40px;
+        width: 40px;
+    }
+    
+    #progress-value{
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        font-size: 10px;
+    }
 }
