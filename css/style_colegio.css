@@ -3,24 +3,36 @@ html{
 }
 
 #main-title{
-    color: white;
     font-size: 80px;
-    text-align: center;
+    margin-top: 2vh;
     text-transform: uppercase;
-    font-weight: 700;
-    line-height: 400px;
-}
-#title-box{
-    display: block;
-    align-items: center;
-    height: 92vh;
-    width: 100%;   
-    margin: 0 auto;
-    background-image: url(https://s1.significados.com/foto/tecnologia-dura-fa.jpg); 
-    background-position: center;
-    background-size: cover;
+    font-weight: bold;
 }
 
+#div-title{
+    display: block;
+    align-items: center;
+    width: 100%;   
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+#abraham-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#abraham{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}   
 #progress{
     position: fixed;
     bottom: 20px;
@@ -47,45 +59,32 @@ html{
 
 }
 
-.images{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-    height: 320px;
-}
-
 .center{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.texto{
+    text-align: justify;
     margin: 0 auto;
+    width: 70%;
 }
 
 .subtitulo{
-    padding-top: 15px;   
-    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: 5rem;
 }
-.subtitulo_h4{
-    padding-bottom: 20px;
-}
-
-.images-uni{
+.images{
     display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    height: 280px;
+    margin: 30px auto;
+    width: 450px;
+    height: 320px;
     border-radius: 10px;
-}
-
-.card_img{
-    height: 12rem;
-}
-
-.navbar{
-    height: 8vh;
 }
 
 .links{
@@ -118,62 +117,65 @@ html{
     width: 100%;
 }
 
-.parrafo{
-    width: 50%;
-    justify-items: auto;
+.navbar{
+    height: 8vh;
 }
 
 footer{
     height: 250px;
+    margin-top: 50px;
 }
 
-#abraham{
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-    margin-top: 15px;
-    border-radius: 100%;
+#photoshop{
+    width: 350px;
 }
+
 @media (max-width: 1024px){
     #main-title{
         font-size: 60px;
         line-height: 100px;
-    }
-    #title-box{
-        height: 500px;
+        font-weight: bold;
     }
     #tendencias_actuales{
-        height: 600px;
+        height: 500px;
         margin: 50px auto;
     }
     .images{
-        width: 350px;
-        height: 220px;
+        width: 300px;
+        height: 250px;
     }
     #carouselExampleDark{
         height: 500px;
     }
-    .parrafo{
-        width: 100%;
-    }
+    
     .navbar{
         height: 100%;
     }
-    .images-uni{
-        width: 350px;
-        height: 300px;
+    #progress{
+        display: none;
     }
-    
+    #progress-value{
+        display: none;
+    }
+    #photoshop{
+        width: 250px;
+    }
 }
 @media (max-width: 768px){
     #progress{
-        height: 0px;
-        width: 0px;
+        height: 40px;
+        width: 40px;
     }
     
     #progress-value{
         height: calc(100% - 20px);
         width: calc(100% - 20px);
-        font-size: 0px;
+        font-size: 10px;
     }
+
+    #flash{
+        height: 200px;
+        
+    }
+    
 }
